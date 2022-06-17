@@ -1,6 +1,6 @@
 import React from "react";
 // import Button from "../../public/assets/Button";
-import logo from "../pages/logo192.png";
+import logo from "./logo.png";
 import { Link } from "react-router-dom";
 // import "src/navigation/css/Button.css";
 import "./Navigation.css";
@@ -9,7 +9,11 @@ export default function Navigation() {
     <div>
       <nav className="navbar">
         <Link to="/">
-          <img src={logo} alt="logo" style={{ height: 50, width: 50 }}></img>
+          <img
+            src={logo}
+            alt="logo"
+            style={{ height: 88, width: 88, marginTop: "1.2em" }}
+          ></img>
         </Link>
         <span className="spaceSymbol"></span>
         <ul className={"nav-menu"}>
@@ -80,19 +84,6 @@ export default function Navigation() {
               }}
             >
               Data
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/home"
-              className="nav-links "
-              style={{
-                paddingTop: "3px",
-                paddingBottom: "4px",
-                marginTop: "11px",
-              }}
-            >
-              Hi vishal
             </Link>
           </li>
         </ul>
