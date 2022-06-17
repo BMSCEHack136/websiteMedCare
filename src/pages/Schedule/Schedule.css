@@ -1,0 +1,45 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin:2%;
+    margin-left: 10%;
+    text-align: center;
+}
+.card2{
+    padding: 2px 16px;
+    
+}
+.content-table {
+   
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #000080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-tabletbody tr {
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #000080;
+}
