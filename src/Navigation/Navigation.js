@@ -82,6 +82,19 @@ export default function Navigation() {
               Data
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/home"
+              className="nav-links "
+              style={{
+                paddingTop: "3px",
+                paddingBottom: "4px",
+                marginTop: "11px",
+              }}
+            >
+              Hi vishal
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

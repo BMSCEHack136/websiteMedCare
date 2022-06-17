@@ -1,7 +1,7 @@
 body {
     background: #f0f0f0;
     margin: 0;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
     /* padding: 0 40px; */
 }
 
@@ -12,29 +12,42 @@ section {
 }
 
 .testimonials-section {
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
     color: white;
-    
+    margin-bottom: 6%;
 }
 
 .testimonials-section li {
     background: #000080;
     text-align: center;
+    font-size: 1.5em;
+    
     padding: 2em 1em;
     width: 80%;
+    height: 12em;
     margin: 0 auto 5em auto;
     border-radius: 1em;
+    list-style: none
 }
+.testimonials-section li img {
+    width: 5em;
+    height: 5em;
+    border: 5px solid #000080;
+    border-radius: 50%;
+    margin-top: -4.5em;
+    margin-bottom: 1.5em;
+  }
 
 .testimonials-section li:hover {
-    background-color: #000090;
-    border: 2px solid white;
+    background-color: #000080;
+    border: 2px solid #000080;
 }
 
 .testimonials-section h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 8%;
     color: black;
+    font-family: 'Poppins';
 }
 
 @media only screen and (min-width: 1080px) {

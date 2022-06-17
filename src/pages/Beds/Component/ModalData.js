@@ -11,7 +11,7 @@ export default function ModalData({ p_id }) {
     console.log("pid funct");
     let res = await fetch(patientInfoUrl);
     let data = await res.json();
-    console.log(data['data'][0],'pid')
+    console.log(data["data"][0], "pid");
     setInfo(data["data"][0]);
   }
 
@@ -21,17 +21,19 @@ export default function ModalData({ p_id }) {
 
   if (info === "") return <div>add patient</div>;
   else {
-    return <div>{p_id}
-
-    {info["Name"]}
-
-    {info["Gender"]}
-    {info["Age"]}
-    {info["BloodGroup"]}
-
-
-
-    
-    </div>;
+    return (
+      <div>
+        <h1 style={{ marginBottom: "5%" }}> name : {info["Name"]}</h1>
+        <div style={{ textAlign: "left" }}>
+          <h5>id : {p_id}</h5>
+          <hr></hr>
+          <h5>gender : {info["Gender"]}</h5>
+          <hr></hr>
+          <h5>age : {info["Age"]}</h5>
+          <hr></hr>
+          <h5>BloodGroup : {info["BloodGroup"]}</h5>
+        </div>
+      </div>
+    );
   }
 }
