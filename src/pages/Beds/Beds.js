@@ -43,7 +43,8 @@ export default function Beds() {
   console.log("Bed", bedData);
 
   if (HospitalId === "") return <Login />;
-  else if (bedData == "null") return <div>loading</div>;
+  else if (bedData == "null")
+    return <div style={{ fontSize: "50px" }}>loading...</div>;
   else {
     return (
       <div>

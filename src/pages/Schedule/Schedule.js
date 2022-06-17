@@ -23,7 +23,8 @@ export default function Schedule() {
   }, [HospitalId]);
 
   if (HospitalId === "") return <Login />;
-  else if (appt == "null") return <div>loading</div>;
+  else if (appt == "null")
+    return <div style={{ fontSize: "50px" }}>loading...</div>;
   else {
     console.log(appt["data"], "hii");
     return (
@@ -50,7 +51,6 @@ export default function Schedule() {
             </tbody>
           </table>
         </div>
-       
       </div>
     );
   }
@@ -70,4 +70,4 @@ const Row = ({ data }) => {
       </td>
     </tr>
   );
-}
+};
