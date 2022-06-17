@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "../Beds/style.css";
+import "../Beds/style.css";
 
 export default function Beds() {
   // const l = [1, 7, 9, 10, 30, 35];

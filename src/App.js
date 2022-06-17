@@ -9,7 +9,7 @@ function App() {
   if (sessionStorage.getItem("login") == 1) {
     return (
       <div>
-        <NavigationRoute />;
+        <NavigationRoute style={{ backgroundColor: "#000080" }} />;
       </div>
     );
   }
