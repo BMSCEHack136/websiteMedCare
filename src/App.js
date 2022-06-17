@@ -1,4 +1,6 @@
 // import "./App.css";
+import { Provider } from "react";
+import { GlobalData } from "../public/commmon/GlobalData";
 
 import NavigationRoute from "./Navigation/NavigationRoute";
 // import Login from "./pages/Login/Login";
@@ -9,7 +11,9 @@ function App() {
   if (sessionStorage.getItem("login") == 1) {
     return (
       <div>
-        <NavigationRoute />;
+        <GlobalData>
+          <NavigationRoute />;
+        </GlobalData>
       </div>
     );
   }
