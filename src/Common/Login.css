@@ -11,7 +11,7 @@ body {
     display: grid;
     height: 100%;
     width: 100%;
-    background: #2C3442;
+   
     /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
 }
 .LoginWrapper{

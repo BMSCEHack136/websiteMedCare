@@ -3,7 +3,8 @@ import "../Beds/style.css";
 import { GlobalContext } from "../../GlobalData";
 import Login from "../../Common/Login";
 import "../Beds/style.css";
-
+import { useModel, createStore } from "react-model";
+import Modal from "@mui/material/Modal";
 export default function Beds() {
   const { HospitalId } = React.useContext(GlobalContext);
 
