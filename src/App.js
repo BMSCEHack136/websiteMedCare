@@ -2,6 +2,7 @@
 import { Provider } from "react";
 import { GlobalData } from "./GlobalData";
 
+
 import NavigationRoute from "./Navigation/NavigationRoute";
 
 function App() {
