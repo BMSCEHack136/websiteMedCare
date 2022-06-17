@@ -70,4 +70,4 @@ const Row = ({ data }) => {
       </td>
     </tr>
   );
-};
+}
