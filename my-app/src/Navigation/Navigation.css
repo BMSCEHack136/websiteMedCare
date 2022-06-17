@@ -2,11 +2,11 @@
 .navbar {
   
     background: #151B24;
-    height: 60px;
+    height: 50px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    font-size: 1.2rem;
+    font-size: .7rem;
     position: sticky;
     z-index: 1150;
     top: 0;

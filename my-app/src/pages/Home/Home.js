@@ -1,6 +1,6 @@
 import React from "react";
 // import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/styles.css";
+
 import Header from "../Home/components/Header";
 import Footer from "../Home/components/Footer";
 import Slider from "../Home/components/Slider";
