@@ -6,8 +6,8 @@ export default function () {
     <div>
       <section class="hero">
         <div class="container">
-          <div class="left-col" style={{ marginLeft: "18%" }}>
-            <h2 class="subhead" style={{ color: "#000080" }}>
+          <div class="left-col" style={{ marginLeft: "10%" }}>
+            <h2 class="subhead" style={{ color: "#000080", marginBottom: "5%" }}>
               Hospital Name
             </h2>
             <h3>
