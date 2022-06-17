@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background: #2C3442;
+    /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
+}
+.LoginWrapper{
+    display: grid;
+    place-items: center;
+   
+}
+
+
+    
+.login {
+    color: #182076;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title-text {
+    display: flex;
+    width: 200%;
+}
+
+.wrapper .title-text .title {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper .form-container {
+    width: 300px;
+    overflow: hidden;
+}
+
+.form-container .form-inner {
+    display: flex;
+    width: 200%;
+}
+
+.form-container .form-inner form {
+    width: 50%;
+
+}
+
+.form-inner form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-inner form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.form-inner form .field input:focus {
+    border-color: #1520a6;
+}
+
+.form-inner form .pass-link {
+    margin-top: 10px;
+
+}
+
+.form-inner form .pass-link a {
+    color: #1520a6;
+    text-decoration: none;
+   
+
+}
+
+
+.form-inner form .pass-link a:hover {
+    text-decoration: underline;
+}
+
+form .field input[type="submit"] {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #1520a6, #000);
+
+}

@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import Login from "../../Common/Login";
+import { GlobalContext } from "../../GlobalData";
+// import "../Beds/style.css";
 
 export default function Schedule() {
-  return (
-    <div style={{ color: "red", width: "100%", fontSize: "100px" }}>
-      Schedule
-    </div>
-  );
+  const { HospitalId} = React.useContext(GlobalContext)
+
+  if ( HospitalId == "") return <Login/>
+
+  else{
+    return(
+
+      <div>
+        schedule
+      </div>
+    )
+  }
+
 }
