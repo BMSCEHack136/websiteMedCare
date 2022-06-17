@@ -1,5 +1,8 @@
 import React from "react";
 import "./index2.css";
+import "../Assets/picture1.jpg";
+import "../Assets/picture2.jpg";
+import "../Assets/picture3.jpg";
 
 export default function Slider() {
   //   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>;
