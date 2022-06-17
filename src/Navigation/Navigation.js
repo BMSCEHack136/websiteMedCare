@@ -65,7 +65,7 @@ export default function Navigation() {
                 marginTop: "11px",
               }}
             >
-              Schedule
+              Appointments
             </Link>
           </li>
 
