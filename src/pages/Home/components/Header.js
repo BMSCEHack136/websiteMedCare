@@ -8,24 +8,24 @@ export default function Header() {
           <h1
             style={{
               marginTop: "10%",
-              marginBottom: "-1%",
+              marginBottom: "1%",
               textAlign: "center",
               color: "black",
               fontSize: "6em",
-              fontFamily: "Montserrat",
+              // fontFamily: "Montserrat",
             }}
           >
             MedCare
           </h1>
-          <p
+          <h3
             style={{
               textAlign: "center",
               color: "black",
-              letterSpacing: "0.5px",
+              letterSpacing: "0.1em",
             }}
           >
-            Providing Solutions To Hospitals
-          </p>
+            Analyse &#x2022; Identify &#x2022; Connect &#x2022;
+          </h3>
         </div>
       </section>
     </div>

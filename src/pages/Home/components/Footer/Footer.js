@@ -5,7 +5,7 @@ import "../Footer/Footer.css";
 
 const Footer = () => (
   <footer className="footer">
-    <p>@MedCare</p>
+    <p>@MedCare, ALL RIGHTS RESERVED.</p>
   
   </footer>
   );
