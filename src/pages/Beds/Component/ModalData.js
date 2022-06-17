@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../../Schedule/Schedule.css";
 export default function ModalData({ p_id }) {
   console.log("piddd");
 
@@ -19,19 +19,56 @@ export default function ModalData({ p_id }) {
     fetchUrl();
   }, [p_id]);
 
-  if (info === "") return <div>add patient</div>;
+  if (info === "")
+    return (
+      <>
+        <body style={{ backgroundColor: "white" }}>
+          <div style={{ marginLeft: "12%" }} className="wrapper">
+            <div className="title-text">
+              <div
+                className="title login"
+                style={{ fontSize: "15px", marginLeft: "-3%" }}
+              >
+                Admit
+              </div>
+            </div>
+            <div style={{ textAlign: "center" }} className="form-container">
+              <div className="form-inner">
+                <form action="" method="post" className="login">
+                  <div className="field">
+                    <input type="text" placeholder="Patient_Name" required />
+                  </div>
+                  <div className="field">
+                    <input type="number" placeholder="Age" required />
+                  </div>
+                  <div className="field">
+                    <input type="text" placeholder="Blood_Group" required />
+                  </div>
+
+                  <div className="field">
+                    <input type="submit" value="Allocate_Bed" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </body>
+      </>
+    );
   else {
     return (
-      <div>
-        <h1 style={{ marginBottom: "5%" }}> name : {info["Name"]}</h1>
-        <div style={{ textAlign: "left" }}>
-          <h5>id : {p_id}</h5>
-          <hr></hr>
-          <h5>gender : {info["Gender"]}</h5>
-          <hr></hr>
-          <h5>age : {info["Age"]}</h5>
-          <hr></hr>
-          <h5>BloodGroup : {info["BloodGroup"]}</h5>
+      <div className="card">
+        <div className="card2">
+          <h1 style={{ marginBottom: "5%" }}> Name : {info["Name"]}</h1>
+          <div style={{ textAlign: "justify", fontSize: "1.5em" }}>
+            <h5 style={{ marginBottom: "2.5%" }}>Id : {p_id}</h5>
+            {/* <hr style={{ width: "60%" }}></hr> */}
+            <h5 style={{ marginBottom: "2.5%" }}>Gender : {info["Gender"]}</h5>
+            <h5 style={{ marginBottom: "2.5%" }}>Age : {info["Age"]}</h5>
+            <h5 style={{ marginBottom: "2.5%" }}>
+              BloodGroup : {info["BloodGroup"]}
+            </h5>
+          </div>
         </div>
       </div>
     );
