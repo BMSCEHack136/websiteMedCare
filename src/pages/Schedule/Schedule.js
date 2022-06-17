@@ -6,7 +6,7 @@ import { GlobalContext } from "../../GlobalData";
 export default function Schedule() {
   const { HospitalId} = React.useContext(GlobalContext)
 
-  if ( HospitalId == "") return <Login/>
+  if ( HospitalId === "") return <Login/>
 
   else{
     return(
