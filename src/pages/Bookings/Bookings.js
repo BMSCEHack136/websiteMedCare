@@ -1,9 +1,29 @@
 import React from "react";
+// import AwesomeSlider from "react-awesome-slider";
+import { GlobalContext } from "../../GlobalData";
 
-export default function Bookings() {
+import Login from "../../Common/Login";
+
+
+
+export default function Booking() {
+
+
+  const { HospitalId} = React.useContext(GlobalContext)
+
+  if ( HospitalId === "") return <Login/>
+
+  else{
+
+  
   return (
-    <div style={{ color: "red", width: "100%", fontSize: "100px" }}>
-      Bookings
-    </div>
+    <>
+      beds
+    </>
   );
 }
+}
+
+
+
+

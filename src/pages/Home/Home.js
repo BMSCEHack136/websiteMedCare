@@ -1,7 +1,7 @@
 import React from "react";
 // import AwesomeSlider from "react-awesome-slider";
 import { GlobalContext } from "../../GlobalData";
-import { GlobalContext } from "../../GlobalData";
+
 import Login from "../../Common/Login";
 
 import Header from "../Home/components/Header";
