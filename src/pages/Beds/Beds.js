@@ -7,7 +7,7 @@ import Login from "../../Common/Login";
 
 
 export default function Beds() {
-
+  
 
   const { HospitalId} = React.useContext(GlobalContext)
 
