@@ -43,7 +43,8 @@ export default function Beds() {
   console.log("Bed", bedData);
 
   if (HospitalId === "") return <Login />;
-  else if (bedData == "null") return <div>loading</div>;
+  else if (bedData == "null")
+    return <div style={{ fontSize: "50px" }}>loading...</div>;
   else {
     return (
       <div>
@@ -64,7 +65,7 @@ export default function Beds() {
             Beds Availability
           </h1>
           <h2 style={{ marginTop: "100" }}>ICU</h2>
-          <div style={{ marginTop: 1, marginLeft: "35%" }} className="row">
+          <div style={{ marginTop: 1, marginLeft: "25%" }} className="row">
             {[0, 1, 2, 3, 4, 5, 6, 7].map((col, ind) => {
               return (
                 <Bed
@@ -77,7 +78,7 @@ export default function Beds() {
               );
             })}
           </div>
-          <div className="row" style={{ marginTop: 1, marginLeft: "35%" }}>
+          <div className="row" style={{ marginTop: 1, marginLeft: "25%" }}>
             {[8, 9, 10, 11, 12, 13, 14, 15].map((col, ind) => {
               return (
                 <Bed
@@ -92,7 +93,7 @@ export default function Beds() {
           </div>
           <hr style={{ width: "40%", marginLeft: "30%" }} />
           <h2 style={{ marginTop: 10, marginTop: "3%" }}>GENERAL BED</h2>
-          <div style={{ marginLeft: "35%" }} className="container">
+          <div style={{ marginLeft: "25%" }} className="container">
             <div className="row">
               {[0, 1, 2, 3, 4, 5, 6, 7].map((col, ind) => {
                 return (
@@ -172,8 +173,6 @@ const Bed = ({ data, ind, type, funct, selectedPatient }) => {
         borderTopLeftRadius: "10px",
         borderTopRightRadius: "10px",
       }}
-    >
-      <p>{data[_key]}</p>
-    </div>
+    ></div>
   );
 };
