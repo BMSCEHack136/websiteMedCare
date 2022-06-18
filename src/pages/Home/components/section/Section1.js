@@ -11,7 +11,7 @@ export default function () {
               class="subhead"
               style={{ color: "#000080", marginBottom: "5%" }}
             >
-              Hospital Name
+              Our Services
             </h2>
             <h3>
               MedCare is a personalized and professional health Care management

@@ -16,7 +16,7 @@ export default function Slider() {
         border: "20px solid rgba(175,167,255,0.2)",
         borderRadius: "3%",
         marginTop: "10%",
-        width: "72%",
+        width: "75%",
         marginLeft: "14%",
         marginRight: "14%",
       }}
