@@ -3,7 +3,7 @@ import "../../Schedule/Schedule.css";
 export default function ModalData({ p_id }) {
   console.log("piddd");
 
-  const patientInfoUrl = `https://exlfit6t23.execute-api.us-east-1.amazonaws.com/ver1/patientinfo?id=${"yash682453"}`;
+  const patientInfoUrl = `https://exlfit6t23.execute-api.us-east-1.amazonaws.com/ver1/patientinfo?id=${p_id}`;
 
   const [info, setInfo] = useState("");
 

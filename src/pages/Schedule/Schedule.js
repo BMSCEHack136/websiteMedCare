@@ -36,8 +36,8 @@ export default function Schedule() {
           <table class="content-table">
             <thead>
               <tr>
-                <th>Patient_id</th>
-                <th>Name</th>
+                <th>Patient ID</th>
+
                 <th>Date/Time</th>
                 <th>Phone</th>
                 <th>Status</th>
@@ -45,8 +45,9 @@ export default function Schedule() {
             </thead>
             <tbody>
               {appt["data"].map((row) => {
+                console.log(row, "hiii");
+
                 return <>{row.resolve === "0" && <Row data={row} />}</>;
-                // console.log(row,'hiii')
               })}
             </tbody>
           </table>
@@ -59,12 +60,12 @@ export default function Schedule() {
 const Row = ({ data }) => {
   return (
     <tr>
-      <td>{data.Patient_id}</td>
-      <td>-</td>
+      <td>{data.name}</td>
+
       <td>
         {data.Date} {data.Time}
       </td>
-      <td>-</td>
+      <td>{data.phone}</td>
       <td>
         <Button type="button">Pending</Button>
       </td>

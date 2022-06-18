@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 // import Button from "../../public/assets/Button";
 import logo from "./logo.png";
 import { Link } from "react-router-dom";
 // import "src/navigation/css/Button.css";
 import "./Navigation.css";
+import { Button } from "@mui/material";
+import { blue } from "@mui/material/colors";
+import { GlobalContext } from "../GlobalData";
 export default function Navigation() {
+  const { setHospitaId } = useContext(GlobalContext);
   return (
     <div>
       <nav className="navbar">
@@ -45,19 +49,6 @@ export default function Navigation() {
               Beds
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/bookings"
-              className="nav-links "
-              style={{
-                paddingTop: "3px",
-                paddingBottom: "4px",
-                marginTop: "11px",
-              }}
-            >
-              Bookings
-            </Link>
-          </li>
 
           <li className="nav-item">
             <Link
@@ -83,10 +74,35 @@ export default function Navigation() {
                 marginTop: "11px",
               }}
             >
-              Data
+              About Us
             </Link>
           </li>
         </ul>
+        <li className="nav-item">
+          <Link
+            to="/home"
+            className="nav-links "
+            style={{
+              paddingTop: "3px",
+              paddingBottom: "4px",
+              marginTop: "11px",
+            }}
+          >
+            <Button
+              onClick={() => setHospitaId("")}
+              type="submit"
+              style={{
+                color: "white",
+                backgroundColor: "rgb(56, 56, 56)",
+                borderRadius: "20px",
+                width: "90px",
+                height: "40px",
+              }}
+            >
+              Log out
+            </Button>
+          </Link>
+        </li>
       </nav>
     </div>
   );
