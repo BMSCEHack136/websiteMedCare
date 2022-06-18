@@ -11,12 +11,12 @@ export default function () {
               Hospital Name
             </h2>
             <h3>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+             MedCare is a personalized and professional health Care management service
+             which enables the customers to directly access the availability of different sections.
+             Some of the key medical services offered are checking the details of the upcoming 
+             Appointments scheduled,availability and details of the beds in the particular Hospital.
+             We also provide a mobile based app to the customers which enables them to schedule Appointments,
+             buy medical products and call for an ambulance.
             </h3>
 
             <div class="hero-cta">

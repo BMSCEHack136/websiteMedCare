@@ -79,7 +79,7 @@ export default function Navigation() {
                 marginTop: "11px",
               }}
             >
-              Data
+              About Us
             </Link>
           </li>
         </ul>

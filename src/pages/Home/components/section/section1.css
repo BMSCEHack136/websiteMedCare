@@ -8,11 +8,16 @@ section {
     padding: 2em 2em;
     left: 0;
     right: 2em;
+    /* margin-left: -6%;
+    margin-right: -6%; */
 }
 
 .hero {
     text-align: center;
     margin-bottom: 5%;
+    margin-left: -8%;
+    margin-right: -8%;
+
 }
 
 .left-col .subhead {
